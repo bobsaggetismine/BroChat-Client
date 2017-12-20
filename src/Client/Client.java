@@ -52,7 +52,7 @@ public class Client {
 		
 		try {
 			socket = new DatagramSocket();
-			IP = InetAddress.getByName("192.168.0.13");
+			IP = InetAddress.getByName("localhost");
 			for (char c : password) this.password+=c;
 			if (listening){
 				this.window = new ClientWindow(name,this,config);
